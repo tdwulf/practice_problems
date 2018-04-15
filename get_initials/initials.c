@@ -14,12 +14,9 @@ int main(void)
     for(int i = 0; name[i] != '\0'; i++)
     {
         //check to see if the character is a NOT a space AND is either preceded by a blank or is the first character in the string
-        if(name[i] != (char)32) {
-            if (name[i-1] == (char)32 || name[i] == name[0])
-            {
-                 //Print the intials in uppercase
+        if(name[i] != (char)32 && (name[i-1] == (char)32 || name[i] == name[0])) {
+            //Print the intials in uppercase
             printf("%c",toupper(name[i]));
-            }
         } 
     }
     printf("\n");
