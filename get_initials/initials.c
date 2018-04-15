@@ -7,8 +7,9 @@ int main(void)
 {
     char name[50];
     //get user input
+    printf("Type your full name: ");
     fgets(name, 50 ,stdin);
-    printf("%s",name);
+    
     //itterate through each character of the string
     for(int i = 0; name[i] != '\0'; i++)
     {
